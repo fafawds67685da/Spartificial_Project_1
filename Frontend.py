@@ -20,7 +20,7 @@ def add_background_image(image_url):
 # Function to fetch predictions
 def get_predictions(file):
     files = {'file': file.getvalue()}
-    response = requests.post("http://127.0.0.1:8000/predict/", files=files)
+    response = requests.post("https://spartificial-project-1-6.onrender.com/predict/", files=files)
     if response.status_code == 200:
         return pd.read_csv(io.StringIO(response.text))
     return None
@@ -28,7 +28,7 @@ def get_predictions(file):
 # Function to fetch the plot
 def get_plot(file):
     files = {'file': file.getvalue()}
-    response = requests.post("http://127.0.0.1:8000/plot/", files=files)
+    response = requests.post("https://spartificial-project-1-6.onrender.com/plot/", files=files)
     if response.status_code == 200:
         return response.content
     return None
