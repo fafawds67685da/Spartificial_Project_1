@@ -67,6 +67,7 @@ tqdm==4.66.6
 traitlets==5.14.3
 typing-extensions==4.12.2
 tzdata==2024.2
+uvicorn==0.23.2
 watchdog==6.0.0
 webcolors==24.11.1
 webencodings==0.5.1
